@@ -1,1 +1,3 @@
-This is the source code to Jon Barron's public academic website: https://jonbarron.info/. Feel free to clone this code for your own personal use.
+# Research Portfolio
+
+Personal academic website showcasing research in robotics and machine learning.
