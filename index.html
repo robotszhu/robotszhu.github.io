@@ -9,7 +9,7 @@
     <meta name="description" content="Kefei Zhu, Research Scientist at PsiBot. Research interests include in-context learning in robotics, world models, RL post-training, and dexterous manipulation from human data.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css?v=20261104-layout">
   </head>
 
   <body>
@@ -17,9 +17,7 @@
       <a href="./" aria-current="page">Home</a>
       <a href="blog.html">Blog</a>
     </nav>
-    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      <tr style="padding:0px">
-        <td style="padding:0px">
+    <main class="home-page">
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr style="padding:0px">
               <td style="padding:2.5%;width:63%;vertical-align:middle">
@@ -56,10 +54,12 @@
               <button class="research-view-button" type="button" data-research-view="all" aria-pressed="false" aria-controls="research-list">All</button>
             </div>
           </div>
-          <table id="research-list" aria-labelledby="research-heading" style="width:100%;border:0;border-spacing:0 10px;border-collapse:separate;margin:0 auto;"><tbody id="research-entries">
+          <table id="research-list" aria-labelledby="research-heading" style="width:100%;border:0;border-spacing:0 10px;border-collapse:separate;margin:0 auto;">
+            <colgroup><col class="research-image-column"><col></colgroup>
+            <tbody id="research-entries">
             <tr data-research-entry="openwam">
-              <td style="padding:16px;width:25%;vertical-align:middle;"><a href="https://openwam-official.github.io/"><img class="paper-image" src="images/openwam.jpg" alt="OpenWAM: An Open, Modular Exploration Towards Systematic World-Action Model Pretraining" loading="lazy"></a></td>
-              <td style="padding:8px;width:75%;vertical-align:middle;">
+              <td class="research-image-cell"><a href="https://openwam-official.github.io/"><img class="paper-image" src="images/openwam.jpg" alt="OpenWAM: An Open, Modular Exploration Towards Systematic World-Action Model Pretraining" loading="lazy"></a></td>
+              <td class="research-text-cell">
                 <a href="https://openwam-official.github.io/"><span class="papertitle">OpenWAM: An Open, Modular Exploration Towards Systematic World-Action Model Pretraining</span></a><br>
                 Yuran Wang, Siqiao Huang, Mingleyang Li, Chenhao Zhang, Jiaqi Liang, Weiyang Jin, Yue Chen, Xuemin Chi, Donghao Zhou, Qize Yu, Yu-Kai Wang, Yuhan Rui, Shenzhe Yao, Zhen Yuan, Zhenhao Shen, <strong>Kefei Zhu</strong>, Zijie Zhu, Ning Gao, Xiaowei Chi, Guanqi He, Shanghang Zhang, Hao Dong, Lin Shao, Hang Zhao<br>
                 <span class="publication-status"><a href="https://actiongapworkshop.github.io/">Best Paper Award &middot; CoRL 2026 G2A Workshop</a></span>
@@ -68,8 +68,8 @@
               </td>
             </tr>
             <tr data-research-entry="dexflywheel" class="featured-paper">
-              <td style="padding:16px;width:25%;vertical-align:middle;"><a href="https://dexflywheel.github.io/"><img class="paper-image" src="images/dexflywheel.jpg" alt="DexFlyWheel: A Scalable and Self-improving Data Generation Framework for Dexterous Manipulation" loading="lazy"></a></td>
-              <td style="padding:8px;width:75%;vertical-align:middle;">
+              <td class="research-image-cell"><a href="https://dexflywheel.github.io/"><img class="paper-image" src="images/dexflywheel.jpg" alt="DexFlyWheel: A Scalable and Self-improving Data Generation Framework for Dexterous Manipulation" loading="lazy"></a></td>
+              <td class="research-text-cell">
                 <span class="featured-label">Featured work</span><br>
                 <a href="https://dexflywheel.github.io/"><span class="papertitle">DexFlyWheel: A Scalable and Self-improving Data Generation Framework for Dexterous Manipulation</span></a><br>
                 <strong>Kefei Zhu</strong>, Fengshuo Bai, YuanHao Xiang, Yishuai Cai, Xinglin Chen, Ruochong Li, Xingtao Wang, Hao Dong, Yaodong Yang, Xiaopeng Fan, Yuanpei Chen<br>
@@ -82,8 +82,8 @@
               <td colspan="2"><h3>PsiBot Technical Reports</h3></td>
             </tr>
             <tr data-research-entry="psi-r25">
-              <td style="padding:16px;width:25%;vertical-align:middle;"><a href="https://cypypccpy.github.io/scaling-pair-data.github.io/"><img class="paper-image" src="images/psi-r25.svg" alt="Scaling Pair Data for Embodied Intelligence" loading="lazy"></a></td>
-              <td style="padding:8px;width:75%;vertical-align:middle;">
+              <td class="research-image-cell"><a href="https://cypypccpy.github.io/scaling-pair-data.github.io/"><img class="paper-image" src="images/psi-r25.svg" alt="Scaling Pair Data for Embodied Intelligence" loading="lazy"></a></td>
+              <td class="research-text-cell">
                 <a href="https://cypypccpy.github.io/scaling-pair-data.github.io/"><span class="papertitle">Scaling Pair Data for Embodied Intelligence</span></a><br>
                 PsiBot Team &middot; Psi-R2.5<br>
                 <span class="publication-status">Technical Report</span>
@@ -92,8 +92,8 @@
               </td>
             </tr>
             <tr data-research-entry="psi-human-skill">
-              <td style="padding:16px;width:25%;vertical-align:middle;"><a href="https://cypypccpy.github.io/tech-blog.github.io/"><img class="paper-image" src="images/psi-human-skill.gif" alt="From Human Skill to Robotic Mastery" loading="lazy"></a></td>
-              <td style="padding:8px;width:75%;vertical-align:middle;">
+              <td class="research-image-cell"><a href="https://cypypccpy.github.io/tech-blog.github.io/"><img class="paper-image" src="images/psi-human-skill.gif" alt="From Human Skill to Robotic Mastery" loading="lazy"></a></td>
+              <td class="research-text-cell">
                 <a href="https://cypypccpy.github.io/tech-blog.github.io/"><span class="papertitle">From Human Skill to Robotic Mastery</span></a><br>
                 PsiBot Team &middot; Psi-R2 and Psi-W0<br>
                 <span class="publication-status">Technical Report &middot; March 2026</span>
@@ -102,8 +102,8 @@
               </td>
             </tr>
             <tr data-research-entry="resmerge">
-              <td style="padding:16px;width:25%;vertical-align:middle;"><a href="https://resmerge.github.io/"><img class="paper-image" src="images/resmerge.svg" alt="ResMerge: Residual Policy Learning and Merging for Continual Adaptation of Pre-trained Robot Policies" loading="lazy"></a></td>
-              <td style="padding:8px;width:75%;vertical-align:middle;">
+              <td class="research-image-cell"><a href="https://resmerge.github.io/"><img class="paper-image" src="images/resmerge.svg" alt="ResMerge: Residual Policy Learning and Merging for Continual Adaptation of Pre-trained Robot Policies" loading="lazy"></a></td>
+              <td class="research-text-cell">
                 <a href="https://resmerge.github.io/"><span class="papertitle">ResMerge: Residual Policy Learning and Merging for Continual Adaptation of Pre-trained Robot Policies</span></a><br>
                 <strong>Kefei Zhu</strong>, Lingyun Xu, Yue Xin, Xiaoqi Li, Caixin Guo, Xincheng Du, Yuanpei Chen, Yaodong Yang, Hao Dong<br>
                 <p class="paper-links"><a href="https://resmerge.github.io/">project page</a> / <a href="https://arxiv.org/abs/2610.41663">arXiv</a> / <a href="https://github.com/zhucoffee/resmerge-official">code</a></p>
@@ -111,8 +111,8 @@
               </td>
             </tr>
             <tr data-research-entry="tos" hidden>
-              <td style="padding:16px;width:25%;vertical-align:middle;"><img class="paper-image" src="images/tos.jpg" alt="ToS: Tree-of-Skill Reinforcement Learning driven by Behavior Tree for Long-horizon Manipulation" loading="lazy"></td>
-              <td style="padding:8px;width:75%;vertical-align:middle;">
+              <td class="research-image-cell"><img class="paper-image" src="images/tos.jpg" alt="ToS: Tree-of-Skill Reinforcement Learning driven by Behavior Tree for Long-horizon Manipulation" loading="lazy"></td>
+              <td class="research-text-cell">
                 <span class="papertitle">ToS: Tree-of-Skill Reinforcement Learning driven by Behavior Tree for Long-horizon Manipulation</span><br>
                 Xinglin Chen, Yishuai Cai, Minglong Li, Wenjing Yang, <strong>Kefei Zhu</strong>, Fengshuo Bai, Yaodong Yang, Yuanpei Chen<br>
                 <span class="publication-status"><em>NeurIPS</em>, 2026</span>
@@ -120,8 +120,8 @@
               </td>
             </tr>
             <tr data-research-entry="uncad" hidden>
-              <td style="padding:16px;width:25%;vertical-align:middle;"><a href="https://arxiv.org/abs/2504.12826"><img class="paper-image" src="images/UncAD.jpg" alt="UncAD: Towards Safe End-to-end Autonomous Driving via Online Map Uncertainty" loading="lazy"></a></td>
-              <td style="padding:8px;width:75%;vertical-align:middle;">
+              <td class="research-image-cell"><a href="https://arxiv.org/abs/2504.12826"><img class="paper-image" src="images/UncAD.jpg" alt="UncAD: Towards Safe End-to-end Autonomous Driving via Online Map Uncertainty" loading="lazy"></a></td>
+              <td class="research-text-cell">
                 <a href="https://arxiv.org/abs/2504.12826"><span class="papertitle">UncAD: Towards Safe End-to-end Autonomous Driving via Online Map Uncertainty</span></a><br>
                 Pengxuan Yang, Yupeng Zheng, Qichao Zhang, <strong>Kefei Zhu</strong>, Zebin Xing, Qiao Lin, Yun-Fu Liu, Zhiguo Su, Dongbin Zhao<br>
                 <span class="publication-status"><em>ICRA</em>, 2025</span>
@@ -256,8 +256,6 @@
               </td>
             </tr>
           </tbody></table>
-        </td>
-      </tr>
-    </table>
+    </main>
   </body>
 </html>

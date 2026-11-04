@@ -153,14 +153,14 @@ span.highlight {
 
 .paper-image {
   display: block;
-  width: 100%;
-  max-width: 200px;
+  width: 200px;
+  max-width: 100%;
   height: auto;
 }
 
 .institution-logo {
-  width: 100%;
-  max-width: 100px;
+  width: 100px;
+  max-width: 100%;
   height: auto;
 }
 
@@ -185,6 +185,30 @@ span.highlight {
   color: #1772d0;
   font-size: 12px;
   font-weight: 700;
+}
+
+.home-page {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#research-list {
+  table-layout: fixed;
+}
+
+.research-image-column {
+  width: 232px;
+}
+
+.research-image-cell {
+  padding: 16px;
+  vertical-align: middle;
+}
+
+.research-text-cell {
+  padding: 8px;
+  vertical-align: middle;
 }
 
 .research-header {
@@ -257,7 +281,7 @@ span.highlight {
   display: flex;
   justify-content: flex-end;
   gap: 24px;
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto 8px;
   padding: 16px 20px;
   border-bottom: 1px solid #eee;
@@ -285,7 +309,7 @@ span.highlight {
 
 .blog-page {
   box-sizing: border-box;
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 24px 20px 40px;
 }
@@ -380,6 +404,14 @@ span.highlight {
 }
 
 @media (max-width: 600px) {
+  .research-image-column {
+    width: 34%;
+  }
+
+  .research-image-cell {
+    padding: 12px 8px;
+  }
+
   .entry-date {
     display: block;
     float: none;
