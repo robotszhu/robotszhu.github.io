@@ -200,13 +200,33 @@ span.highlight {
   margin: 0 auto;
 }
 
+.news-section,
 .research-section {
   margin: 16px 16px 24px;
 }
 
+.news-section > h2,
 .research-section > h2 {
   padding-bottom: 12px;
   border-bottom: 1px solid #ddd;
+}
+
+.news-list {
+  margin: 14px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.news-list li {
+  display: grid;
+  grid-template-columns: 52px minmax(0, 1fr);
+  gap: 10px;
+  margin: 0 0 8px;
+  line-height: 1.6;
+}
+
+.news-date {
+  white-space: nowrap;
 }
 
 .research-work {
