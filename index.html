@@ -63,15 +63,15 @@
               </td>
             </tr>
           </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
-              <td style="padding:0 0 16px;width:100%;vertical-align:middle">
-                <h2>Research</h2>
-              </td>
-            </tr>
-          </tbody></table>
-          <table style="width:100%;border:0;border-spacing:0 10px;border-collapse:separate;margin:0 auto;"><tbody>
-            <tr>
+          <div class="research-header">
+            <h2 id="research-heading">Research</h2>
+            <div class="research-controls" id="research-view-controls" role="group" aria-label="Research view" hidden>
+              <button class="research-view-button" type="button" data-research-view="selected" aria-pressed="true" aria-controls="research-list">Selected</button>
+              <button class="research-view-button" type="button" data-research-view="all" aria-pressed="false" aria-controls="research-list">All</button>
+            </div>
+          </div>
+          <table id="research-list" aria-labelledby="research-heading" style="width:100%;border:0;border-spacing:0 10px;border-collapse:separate;margin:0 auto;"><tbody id="research-entries">
+            <tr data-research-entry="openwam">
               <td style="padding:16px;width:25%;vertical-align:middle;"><a href="https://openwam-official.github.io/"><img class="paper-image" src="images/openwam.jpg" alt="OpenWAM: An Open, Modular Exploration Towards Systematic World-Action Model Pretraining" loading="lazy"></a></td>
               <td style="padding:8px;width:75%;vertical-align:middle;">
                 <a href="https://openwam-official.github.io/"><span class="papertitle">OpenWAM: An Open, Modular Exploration Towards Systematic World-Action Model Pretraining</span></a><br>
@@ -81,16 +81,7 @@
                 <p>An open, modular research stack for systematically studying world-action model pretraining with human and robot data.</p>
               </td>
             </tr>
-            <tr>
-              <td style="padding:16px;width:25%;vertical-align:middle;"><a href="https://resmerge.github.io/"><img class="paper-image" src="images/resmerge.svg" alt="ResMerge: Residual Policy Learning and Merging for Continual Adaptation of Pre-trained Robot Policies" loading="lazy"></a></td>
-              <td style="padding:8px;width:75%;vertical-align:middle;">
-                <a href="https://resmerge.github.io/"><span class="papertitle">ResMerge: Residual Policy Learning and Merging for Continual Adaptation of Pre-trained Robot Policies</span></a><br>
-                <strong>Kefei Zhu</strong>, Lingyun Xu, Yue Xin, Xiaoqi Li, Caixin Guo, Xincheng Du, Yuanpei Chen, Yaodong Yang, Hao Dong<br>
-                <p class="paper-links"><a href="https://resmerge.github.io/">project page</a> / <a href="https://arxiv.org/abs/2610.41663">arXiv</a> / <a href="https://github.com/zhucoffee/resmerge-official">code</a></p>
-                <p>Continually adapts frozen robot policies through residual reinforcement learning and merges compatible residual experts using Residual-Field Consistency.</p>
-              </td>
-            </tr>
-            <tr class="featured-paper">
+            <tr data-research-entry="dexflywheel" class="featured-paper">
               <td style="padding:16px;width:25%;vertical-align:middle;"><a href="https://dexflywheel.github.io/"><img class="paper-image" src="images/dexflywheel.jpg" alt="DexFlyWheel: A Scalable and Self-improving Data Generation Framework for Dexterous Manipulation" loading="lazy"></a></td>
               <td style="padding:8px;width:75%;vertical-align:middle;">
                 <span class="featured-label">Featured work</span><br>
@@ -101,32 +92,10 @@
                 <p>A self-improving data flywheel that combines imitation learning, residual reinforcement learning, and augmentation to scale dexterous manipulation.</p>
               </td>
             </tr>
-            <tr>
-              <td style="padding:16px;width:25%;vertical-align:middle;"><img class="paper-image" src="images/tos.jpg" alt="ToS: Tree-of-Skill Reinforcement Learning driven by Behavior Tree for Long-horizon Manipulation" loading="lazy"></td>
-              <td style="padding:8px;width:75%;vertical-align:middle;">
-                <span class="papertitle">ToS: Tree-of-Skill Reinforcement Learning driven by Behavior Tree for Long-horizon Manipulation</span><br>
-                Xinglin Chen, Yishuai Cai, Minglong Li, Wenjing Yang, <strong>Kefei Zhu</strong>, Fengshuo Bai, Yaodong Yang, Yuanpei Chen<br>
-                <span class="publication-status"><em>NeurIPS</em>, 2026</span>
-                <p>Combines behavior trees and skill-based reinforcement learning for long-horizon manipulation.</p>
-              </td>
+            <tr class="research-group-heading" data-research-entry="reports-heading">
+              <td colspan="2"><h3>PsiBot Technical Reports</h3></td>
             </tr>
-            <tr>
-              <td style="padding:16px;width:25%;vertical-align:middle;"><a href="https://arxiv.org/abs/2504.12826"><img class="paper-image" src="images/UncAD.jpg" alt="UncAD: Towards Safe End-to-end Autonomous Driving via Online Map Uncertainty" loading="lazy"></a></td>
-              <td style="padding:8px;width:75%;vertical-align:middle;">
-                <a href="https://arxiv.org/abs/2504.12826"><span class="papertitle">UncAD: Towards Safe End-to-end Autonomous Driving via Online Map Uncertainty</span></a><br>
-                Pengxuan Yang, Yupeng Zheng, Qichao Zhang, <strong>Kefei Zhu</strong>, Zebin Xing, Qiao Lin, Yun-Fu Liu, Zhiguo Su, Dongbin Zhao<br>
-                <span class="publication-status"><em>ICRA</em>, 2025</span>
-                <p class="paper-links"><a href="https://arxiv.org/abs/2504.12826">arXiv</a> / <a href="https://github.com/pengxuanyang/UncAD">code</a></p>
-                <p>Uses online map uncertainty to improve the safety and robustness of end-to-end autonomous driving.</p>
-              </td>
-            </tr>
-          </tbody></table>
-
-          <table style="width:100%;margin:0 auto;border:0;border-spacing:0;padding:16px;">
-            <tbody><tr><td><h2>PsiBot Technical Reports</h2></td></tr></tbody>
-          </table>
-          <table style="width:100%;border:0;border-spacing:0 10px;border-collapse:separate;margin:0 auto;"><tbody>
-            <tr>
+            <tr data-research-entry="psi-r25">
               <td style="padding:16px;width:25%;vertical-align:middle;"><a href="https://cypypccpy.github.io/scaling-pair-data.github.io/"><img class="paper-image" src="images/psi-r25.svg" alt="Scaling Pair Data for Embodied Intelligence" loading="lazy"></a></td>
               <td style="padding:8px;width:75%;vertical-align:middle;">
                 <a href="https://cypypccpy.github.io/scaling-pair-data.github.io/"><span class="papertitle">Scaling Pair Data for Embodied Intelligence</span></a><br>
@@ -136,7 +105,7 @@
                 <p>Psi-R2.5 explores strong human–robot paired data, RL post-training, and in-context learning for dexterous manipulation.</p>
               </td>
             </tr>
-            <tr>
+            <tr data-research-entry="psi-human-skill">
               <td style="padding:16px;width:25%;vertical-align:middle;"><a href="https://cypypccpy.github.io/tech-blog.github.io/"><img class="paper-image" src="images/psi-human-skill.gif" alt="From Human Skill to Robotic Mastery" loading="lazy"></a></td>
               <td style="padding:8px;width:75%;vertical-align:middle;">
                 <a href="https://cypypccpy.github.io/tech-blog.github.io/"><span class="papertitle">From Human Skill to Robotic Mastery</span></a><br>
@@ -146,7 +115,73 @@
                 <p>A human-data-centered framework combining world-action modeling and action-conditioned world modeling for policy evaluation, reinforcement learning, and data generation.</p>
               </td>
             </tr>
+            <tr data-research-entry="resmerge">
+              <td style="padding:16px;width:25%;vertical-align:middle;"><a href="https://resmerge.github.io/"><img class="paper-image" src="images/resmerge.svg" alt="ResMerge: Residual Policy Learning and Merging for Continual Adaptation of Pre-trained Robot Policies" loading="lazy"></a></td>
+              <td style="padding:8px;width:75%;vertical-align:middle;">
+                <a href="https://resmerge.github.io/"><span class="papertitle">ResMerge: Residual Policy Learning and Merging for Continual Adaptation of Pre-trained Robot Policies</span></a><br>
+                <strong>Kefei Zhu</strong>, Lingyun Xu, Yue Xin, Xiaoqi Li, Caixin Guo, Xincheng Du, Yuanpei Chen, Yaodong Yang, Hao Dong<br>
+                <p class="paper-links"><a href="https://resmerge.github.io/">project page</a> / <a href="https://arxiv.org/abs/2610.41663">arXiv</a> / <a href="https://github.com/zhucoffee/resmerge-official">code</a></p>
+                <p>Continually adapts frozen robot policies through residual reinforcement learning and merges compatible residual experts using Residual-Field Consistency.</p>
+              </td>
+            </tr>
+            <tr data-research-entry="tos" hidden>
+              <td style="padding:16px;width:25%;vertical-align:middle;"><img class="paper-image" src="images/tos.jpg" alt="ToS: Tree-of-Skill Reinforcement Learning driven by Behavior Tree for Long-horizon Manipulation" loading="lazy"></td>
+              <td style="padding:8px;width:75%;vertical-align:middle;">
+                <span class="papertitle">ToS: Tree-of-Skill Reinforcement Learning driven by Behavior Tree for Long-horizon Manipulation</span><br>
+                Xinglin Chen, Yishuai Cai, Minglong Li, Wenjing Yang, <strong>Kefei Zhu</strong>, Fengshuo Bai, Yaodong Yang, Yuanpei Chen<br>
+                <span class="publication-status"><em>NeurIPS</em>, 2026</span>
+                <p>Combines behavior trees and skill-based reinforcement learning for long-horizon manipulation.</p>
+              </td>
+            </tr>
+            <tr data-research-entry="uncad" hidden>
+              <td style="padding:16px;width:25%;vertical-align:middle;"><a href="https://arxiv.org/abs/2504.12826"><img class="paper-image" src="images/UncAD.jpg" alt="UncAD: Towards Safe End-to-end Autonomous Driving via Online Map Uncertainty" loading="lazy"></a></td>
+              <td style="padding:8px;width:75%;vertical-align:middle;">
+                <a href="https://arxiv.org/abs/2504.12826"><span class="papertitle">UncAD: Towards Safe End-to-end Autonomous Driving via Online Map Uncertainty</span></a><br>
+                Pengxuan Yang, Yupeng Zheng, Qichao Zhang, <strong>Kefei Zhu</strong>, Zebin Xing, Qiao Lin, Yun-Fu Liu, Zhiguo Su, Dongbin Zhao<br>
+                <span class="publication-status"><em>ICRA</em>, 2025</span>
+                <p class="paper-links"><a href="https://arxiv.org/abs/2504.12826">arXiv</a> / <a href="https://github.com/pengxuanyang/UncAD">code</a></p>
+                <p>Uses online map uncertainty to improve the safety and robustness of end-to-end autonomous driving.</p>
+              </td>
+            </tr>
+            <tr class="research-group-heading" data-research-entry="year-2026" hidden>
+              <td colspan="2"><h3>2026</h3></td>
+            </tr>
+            <tr class="research-group-heading" data-research-entry="year-2025" hidden>
+              <td colspan="2"><h3>2025</h3></td>
+            </tr>
           </tbody></table>
+          <script>
+            (() => {
+              const controls = document.getElementById('research-view-controls');
+              const list = document.getElementById('research-entries');
+              const entries = new Map(
+                Array.from(list.querySelectorAll('[data-research-entry]')).map(
+                  entry => [entry.dataset.researchEntry, entry]
+                )
+              );
+              const orders = {
+                selected: ['openwam', 'dexflywheel', 'reports-heading', 'psi-r25', 'psi-human-skill', 'resmerge'],
+                all: ['year-2026', 'resmerge', 'openwam', 'tos', 'psi-r25', 'psi-human-skill', 'year-2025', 'dexflywheel', 'uncad']
+              };
+              const buttons = controls.querySelectorAll('[data-research-view]');
+              const showView = view => {
+                entries.forEach(entry => { entry.hidden = true; });
+                orders[view].forEach(key => {
+                  const entry = entries.get(key);
+                  entry.hidden = false;
+                  list.appendChild(entry);
+                });
+                buttons.forEach(button => {
+                  button.setAttribute('aria-pressed', String(button.dataset.researchView === view));
+                });
+              };
+              buttons.forEach(button => {
+                button.addEventListener('click', () => showView(button.dataset.researchView));
+              });
+              showView('selected');
+              controls.hidden = false;
+            })();
+          </script>
 
           <table style="width:100%;border:0;border-spacing:0;margin:0 auto;">
             <tbody>
