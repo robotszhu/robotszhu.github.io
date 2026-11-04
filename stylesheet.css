@@ -150,3 +150,57 @@ span.highlight {
     display: inline-block;
     border-radius: 10px;
 }
+
+.paper-image {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+}
+
+.institution-logo {
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+}
+
+.publication-status {
+  color: #b52b2b;
+}
+
+.paper-links {
+  margin: 8px 0;
+}
+
+.stars-badge {
+  height: 20px;
+  vertical-align: middle;
+}
+
+.featured-paper {
+  background: #f3f8ff;
+}
+
+.featured-label {
+  color: #1772d0;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.entry-date {
+  float: right;
+}
+
+.honors {
+  color: #555;
+  font-size: 13px;
+}
+
+@media (max-width: 600px) {
+  .entry-date {
+    display: block;
+    float: none;
+    color: #666;
+    margin-top: 4px;
+  }
+}

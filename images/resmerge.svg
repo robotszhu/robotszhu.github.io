@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="380" viewBox="0 0 1200 380" role="img" aria-labelledby="title desc">
+  <title id="title">ResMerge: learn residual corrections, then merge or expand</title>
+  <desc id="desc">A frozen base policy supports residual reinforcement learning. Residual-Field Consistency compares correction direction and magnitude. Compatible residuals are merged and refined; incompatible residuals remain separate experts. Initialization uses demonstrations and adaptation requires online interaction.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#63728b"/></marker>
+  </defs>
+  <rect width="1200" height="380" rx="18" fill="#f6f8fc"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#1d2b43">
+    <text x="600" y="43" text-anchor="middle" font-size="25" font-weight="700">Continual adaptation with selective residual consolidation</text>
+    <rect x="28" y="73" width="330" height="229" rx="14" fill="white" stroke="#a6bbdf" stroke-width="2"/>
+    <rect x="435" y="73" width="330" height="229" rx="14" fill="white" stroke="#a6bbdf" stroke-width="2"/>
+    <rect x="842" y="73" width="330" height="229" rx="14" fill="white" stroke="#a6bbdf" stroke-width="2"/>
+    <g text-anchor="middle">
+      <text x="193" y="110" font-size="23" font-weight="700" fill="#2456a6">1. Learn</text>
+      <text x="193" y="152" font-size="19">Frozen pre-trained base policy</text>
+      <text x="193" y="183" font-size="19">+ low-rank residual corrections</text>
+      <text x="193" y="233" font-size="18">Online RL with sparse rewards</text>
+      <text x="193" y="260" font-size="17">No additional expert demos</text>
+      <text x="193" y="283" font-size="17">during residual adaptation</text>
+      <text x="600" y="110" font-size="23" font-weight="700" fill="#2456a6">2. Assess compatibility</text>
+      <text x="600" y="153" font-size="20" font-weight="700">Residual-Field Consistency</text>
+      <text x="600" y="185" font-size="20">Direction × magnitude</text>
+      <text x="600" y="235" font-size="18">Compare correction fields</text>
+      <text x="600" y="262" font-size="18">on shared observations</text>
+      <text x="1007" y="110" font-size="23" font-weight="700" fill="#2456a6">3. Merge or expand</text>
+      <text x="1007" y="151" font-size="19" font-weight="700" fill="#217445">RFC ≥ threshold</text>
+      <text x="1007" y="180" font-size="18">Merge + RL refinement</text>
+      <text x="1007" y="233" font-size="19" font-weight="700" fill="#9a5427">RFC &lt; threshold</text>
+      <text x="1007" y="262" font-size="18">Retain a separate expert</text>
+    </g>
+    <path d="M 370 188 L 422 188" stroke="#63728b" stroke-width="3" marker-end="url(#arrow)"/>
+    <path d="M 777 188 L 829 188" stroke="#63728b" stroke-width="3" marker-end="url(#arrow)"/>
+    <text x="600" y="338" text-anchor="middle" font-size="18">Initialization uses demonstrations. Selective merging reduces storage; the expert bank can grow.</text>
+    <text x="600" y="365" text-anchor="middle" font-size="17" fill="#53627b">Real robot: four tasks, two experts, 72.5% average final-stage success.</text>
+  </g>
+</svg>
