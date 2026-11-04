@@ -257,6 +257,29 @@ span.highlight {
   border-radius: 2px;
 }
 
+.research-work--report {
+  padding: 18px 0;
+}
+
+.research-work--report .research-title {
+  margin-bottom: 4px;
+}
+
+.report-meta {
+  margin: 0;
+  color: #555;
+}
+
+.research-work--report .research-description {
+  margin-top: 6px;
+}
+
+.research-work--report .research-preview .paper-image,
+.research-work--report .research-preview video {
+  height: auto;
+  max-height: 140px;
+}
+
 .research-details .paper-links {
   margin: 8px 0 0;
 }
