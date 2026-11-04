@@ -165,7 +165,24 @@ span.highlight {
 }
 
 .publication-status {
-  color: #b52b2b;
+  color: #333;
+}
+
+.publication-venue {
+  font-style: italic;
+  font-weight: 700;
+}
+
+.publication-award {
+  color: #c62828;
+  font-weight: 700;
+}
+
+.preview-caption {
+  margin-top: 4px;
+  color: #777;
+  font-size: 12px;
+  text-align: center;
 }
 
 .paper-links {
