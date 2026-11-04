@@ -10,27 +10,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    <style>
-      .timeline { position: relative; padding-left: 32px; border-left: 2px solid #ddd; }
-      .timeline-node { position: relative; margin-bottom: 12px; }
-      .timeline-node::before { content: ''; position: absolute; left: -40px; top: 8px; width: 10px; height: 10px; border-radius: 50%; background: #1772d0; }
-      .timeline-node details summary { cursor: pointer; font-weight: 600; font-size: 16px; list-style: none; padding: 4px 0; }
-      .timeline-node details summary::-webkit-details-marker { display: none; }
-      .timeline-node details summary::after { content: ' ▶'; font-size: 12px; color: #999; }
-      .timeline-node details[open] summary::after { content: ' ▼'; }
-      .timeline-node .story { margin-top: 8px; padding: 12px; background: #f9f9f9; border-radius: 6px; color: #444; line-height: 1.6; font-size: 14px; }
-      .timeline-node .story em { display: block; margin-top: 6px; color: #666; font-style: italic; }
-      .journey-philosophy { background: #f7f7f7; padding: 20px 24px; border-radius: 10px; margin-bottom: 20px; }
-      .journey-philosophy p { margin: 0; font-size: 15px; line-height: 1.7; color: #444; }
-      .journey-philosophy .reflection { margin-top: 16px; font-style: normal; color: #444; }
-      .journey-section-details summary { cursor: pointer; font-size: 22px; font-weight: normal; font-family: 'Lato', Verdana, Helvetica, sans-serif; list-style: none; padding: 16px 0; }
-      .journey-section-details summary::-webkit-details-marker { display: none; }
-      .journey-section-details summary::before { content: '▶ '; font-size: 14px; color: #999; }
-      .journey-section-details[open] summary::before { content: '▼ '; }
-    </style>
   </head>
 
   <body>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="./" aria-current="page">Home</a>
+      <a href="blog.html">Blog</a>
+    </nav>
     <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       <tr style="padding:0px">
         <td style="padding:0px">
@@ -182,90 +168,6 @@
               controls.hidden = false;
             })();
           </script>
-
-          <table style="width:100%;border:0;border-spacing:0;margin:0 auto;">
-            <tbody>
-              <tr>
-                <td style="padding:0;">
-                  <details class="journey-section-details" open>
-                    <summary>My Journey</summary>
-                    <div style="padding-top: 8px;">
-                  <div class="journey-philosophy">
-                    <p>
-                      Looking back, many of my decisions seemed "risky" because they went against the grain.  But they were consistent in one thing: I kept choosing depth, long-term value, and technical foundations over short-term comfort. I don't regret the detours. They compounded.
-                    </p>
-                  </div>
-
-                  <div class="timeline">
-
-                    <div class="timeline-node">
-                      <details>
-                        <summary>2022.06</summary>
-                        <div class="story">
-                          Decision: Chose a young autonomous driving startup (PhiGent) over a big-tech internship that most of my peers pursued.<br>
-                          <em>Story: I chose hands-on learning and faster feedback loops. Lost the glitz of big-tech, but I got to physically test and experience dozens of different autonomous vehicles, transforming from someone who barely knew cars into a total car enthusiast. 🚗✨</em>
-                        </div>
-                      </details>
-                    </div>
-
-                    <div class="timeline-node">
-                      <details>
-                        <summary>2023.03</summary>
-                        <div class="story">
-                          Decision: Chose a Zeekr PnC algorithm internship instead of a more predictable product-manager path at Horizon Robotics.<br>
-                          <em>Story: I leaned into depth over comfort, diving into first principles by developing a C/C++ based ADAS system—a truly massive industrial-scale framework 💻. I'll never forget the scorching summer in Jiading, Shanghai, the boiling hot seats of the Zeekr 001 test cars 🥵, and my amazing, supportive colleagues. Hearing the TLA feature I worked on mentioned at the official product launch made my heart race. I proudly earned an SP-level return offer. Huge thanks to the Zeekr ADAS team, the place where my engineering skills were truly forged! Production deployment is the ultimate engineering crucible! 🔥🚗🛠️</em>
-                        </div>
-                      </details>
-                    </div>
-
-                    <div class="timeline-node">
-                      <details>
-                        <summary>2023.12</summary>
-                        <div class="story">
-                          Decision: Chose to continue research at CASIA instead of a SenseTime autonomous driving internship offer.<br>
-                          <em>Story: Engineering helped me grow💪, but research fascinates me✨. I chose rigor and long-horizon questions—the kind of work that compounds, even if it looks slower at first. A massive thank you to the professors and peers at the CASIA DRL Lab—this was the birthplace of my research enlightenment. 🌱📚</em>
-                        </div>
-                      </details>
-                    </div>
-
-                    <div class="timeline-node">
-                      <details>
-                        <summary>2024.06</summary>
-                        <div class="story">
-                          Decision: Chose to pursue a PhD instead of lucrative SP offers from Huawei Vehicle BU and Zeekr.<br>
-                          <em>Story: I chose long-term growth and independence, betting on compounding skills over early stability. Deeply grateful for my family's unwavering support❤️. RIP to all the LeetCode problems I grinded🙏, though TuT. I guess I won't be "Trapping Rain Water" with dynamic programming anytime soon 😢🌧️. </em>
-                        </div>
-                      </details>
-                    </div>
-
-                    <div class="timeline-node">
-                      <details>
-                        <summary>2024.09</summary>
-                        <div class="story">
-                          Decision: Chose embodied AI—joined PsiBot and Peking University as a research intern.<br>
-                          <em>Story: I followed genuine curiosity and impact, moving toward scalable robot learning for open-world real life. Here, I learned how to drive a research project independently from start to finish and how to elegantly bridge industry and academia—this really feels like the best setup I could have asked for. 🤖✨</em>
-                        </div>
-                      </details>
-                    </div>
-
-                    <div class="timeline-node">
-                      <details>
-                        <summary>2026</summary>
-                        <div class="story">
-                          Goal: Hope to do something meaningful in embodied AI while keeping my hairline intact. 💻🤡<br>
-                          <em>Story: Beyond the papers, I hope to keep that same "heart-racing" excitement I felt in the Zeekr test cars. Whether the loss curve goes down or the robot arm goes haywire, as long as I'm still solving hard problems with cool people, it's a win. (And please—stop staying up so late!) ✌️</em>
-                        </div>
-                      </details>
-                    </div>
-
-                  </div>
-
-                    </div>
-                  </details>
-                </td>
-              </tr>
-            </tbody>
-          </table>
 
           <table style="width:100%;margin:0 auto;border:0;border-spacing:0;padding:16px;">
             <tbody><tr><td><h2>Research Experience</h2></td></tr></tbody>
