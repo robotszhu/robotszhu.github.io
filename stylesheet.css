@@ -177,94 +177,76 @@ span.highlight {
   vertical-align: middle;
 }
 
-.featured-paper {
-  background: #f3f8ff;
-}
-
-.featured-label {
-  color: #1772d0;
-  font-size: 12px;
-  font-weight: 700;
-}
-
 .home-page {
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
 }
 
-#research-list {
-  table-layout: fixed;
+.research-section {
+  margin: 16px 16px 24px;
 }
 
-.research-image-column {
-  width: 232px;
+.research-section > h2 {
+  padding-bottom: 12px;
+  border-bottom: 1px solid #ddd;
 }
 
-.research-image-cell {
-  padding: 16px;
-  vertical-align: middle;
+.research-work {
+  display: grid;
+  grid-template-columns: 24px minmax(0, 1fr) 280px;
+  gap: 20px;
+  align-items: start;
+  padding: 24px 0;
+  border-bottom: 1px solid #e6e6e6;
 }
 
-.research-text-cell {
-  padding: 8px;
-  vertical-align: middle;
+.research-number {
+  padding-top: 4px;
+  color: #999;
+  font-size: 12px;
 }
 
-.research-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 12px;
-  padding-bottom: 16px;
+.research-details {
+  min-width: 0;
+  line-height: 1.6;
 }
 
-.research-controls {
-  display: flex;
-  gap: 6px;
-}
-
-.research-controls[hidden],
-#research-entries > tr[hidden] {
-  display: none;
-}
-
-.research-view-button {
-  padding: 6px 14px;
-  border: 1px solid #d8e0e8;
-  border-radius: 6px;
-  background: #fff;
-  color: #555;
-  font: inherit;
-  cursor: pointer;
-}
-
-.research-view-button:hover {
-  border-color: #1772d0;
-  color: #1772d0;
-}
-
-.research-view-button[aria-pressed="true"] {
-  border-color: #1772d0;
-  background: #1772d0;
-  color: #fff;
-}
-
-.research-view-button:focus-visible {
-  outline: 2px solid #1772d0;
-  outline-offset: 3px;
-}
-
-.research-group-heading td {
-  padding: 12px 16px 4px;
-}
-
-.research-group-heading h3 {
-  margin: 0;
-  color: #555;
-  font-size: 16px;
+.research-title {
+  margin: 0 0 8px;
+  font-size: 17px;
   font-weight: 600;
+  line-height: 1.4;
+}
+
+.research-title a,
+.research-title .papertitle {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.research-preview {
+  align-self: center;
+  margin: 3px 0 0;
+}
+
+.research-preview .paper-image,
+.research-preview video {
+  display: block;
+  width: 100%;
+  max-width: none;
+  height: 180px;
+  object-fit: contain;
+  border-radius: 2px;
+}
+
+.research-details .paper-links {
+  margin: 8px 0 0;
+}
+
+.research-description {
+  margin: 10px 0 0;
+  color: #555;
 }
 
 .entry-date {
@@ -276,70 +258,50 @@ span.highlight {
   font-size: 13px;
 }
 
-.site-nav {
-  box-sizing: border-box;
+.journey-section {
+  padding: 16px;
+}
+
+.journey-section-details > summary {
   display: flex;
-  justify-content: flex-end;
-  gap: 24px;
-  max-width: 1000px;
-  margin: 0 auto 8px;
-  padding: 16px 20px;
-  border-bottom: 1px solid #eee;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 0;
+  cursor: pointer;
+  list-style: none;
 }
 
-.site-nav a {
-  padding: 4px 0;
-  color: #666;
-  font-weight: 700;
+.journey-section-details > summary::-webkit-details-marker {
+  display: none;
 }
 
-.site-nav a:hover,
-.site-nav a[aria-current="page"] {
-  color: #1772d0;
+.journey-section-details > summary::before {
+  content: '▶';
+  color: #999;
+  font-size: 12px;
 }
 
-.site-nav a[aria-current="page"] {
-  border-bottom: 2px solid #1772d0;
+.journey-section-details[open] > summary::before {
+  content: '▼';
 }
 
-.site-nav a:focus-visible {
+.journey-section-details > summary:focus-visible {
   outline: 2px solid #1772d0;
   outline-offset: 4px;
 }
 
-.blog-page {
-  box-sizing: border-box;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 24px 20px 40px;
-}
-
-.blog-heading h1 {
-  margin: 0;
-  font-size: 32px;
-  font-weight: normal;
-}
-
-.blog-post {
-  padding-top: 28px;
-}
-
-.blog-post h2 {
-  margin-bottom: 20px;
-}
-
-.blog-page .timeline {
+.journey-section .timeline {
   position: relative;
   padding-left: 32px;
   border-left: 2px solid #ddd;
 }
 
-.blog-page .timeline-node {
+.journey-section .timeline-node {
   position: relative;
   margin-bottom: 12px;
 }
 
-.blog-page .timeline-node::before {
+.journey-section .timeline-node::before {
   content: '';
   position: absolute;
   left: -40px;
@@ -350,7 +312,7 @@ span.highlight {
   background: #1772d0;
 }
 
-.blog-page .timeline-node details summary {
+.journey-section .timeline-node details summary {
   cursor: pointer;
   font-weight: 600;
   font-size: 16px;
@@ -358,21 +320,21 @@ span.highlight {
   padding: 4px 0;
 }
 
-.blog-page .timeline-node details summary::-webkit-details-marker {
+.journey-section .timeline-node details summary::-webkit-details-marker {
   display: none;
 }
 
-.blog-page .timeline-node details summary::after {
+.journey-section .timeline-node details summary::after {
   content: ' ▶';
   font-size: 12px;
   color: #999;
 }
 
-.blog-page .timeline-node details[open] summary::after {
+.journey-section .timeline-node details[open] summary::after {
   content: ' ▼';
 }
 
-.blog-page .timeline-node .story {
+.journey-section .timeline-node .story {
   margin-top: 8px;
   padding: 12px;
   background: #f9f9f9;
@@ -382,36 +344,52 @@ span.highlight {
   font-size: 14px;
 }
 
-.blog-page .timeline-node .story em {
+.journey-section .timeline-node .story em {
   display: block;
   margin-top: 6px;
   color: #666;
   font-style: italic;
 }
 
-.blog-page .journey-philosophy {
+.journey-section .journey-philosophy {
   background: #f7f7f7;
   padding: 20px 24px;
   border-radius: 10px;
   margin-bottom: 20px;
 }
 
-.blog-page .journey-philosophy p {
+.journey-section .journey-philosophy p {
   margin: 0;
   font-size: 15px;
   line-height: 1.7;
   color: #444;
 }
 
+@media (max-width: 760px) {
+  .research-work {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+
+  .research-number {
+    display: none;
+  }
+
+  .research-preview {
+    justify-self: center;
+    width: 100%;
+    max-width: 560px;
+    margin: 0;
+  }
+
+  .research-preview .paper-image,
+  .research-preview video {
+    height: auto;
+    max-height: 320px;
+  }
+}
+
 @media (max-width: 600px) {
-  .research-image-column {
-    width: 34%;
-  }
-
-  .research-image-cell {
-    padding: 12px 8px;
-  }
-
   .entry-date {
     display: block;
     float: none;
